@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fichasPermitidas(puntuacionIzquierda, puntuacionDerecha, fichasJugador) {
+  const fichasPermitidas = [];
+
+  for (const ficha of fichasJugador) {
+    const [izquierda, derecha] = ficha;
+
+    if (
+      izquierda === puntuacionIzquierda ||
+      izquierda === puntuacionDerecha ||
+      derecha === puntuacionIzquierda ||
+      derecha === puntuacionDerecha
+    ) {
+      fichasPermitidas.push(ficha);
+    }
+  }
+
+  return fichasPermitidas;
+}
+    </script>
+</body>
+</html>

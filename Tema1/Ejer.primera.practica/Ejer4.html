@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <span id="span1"></span>
+        dividido entre
+        <span id="span2"></span>
+        da de resto
+        <span id="span3"></span>
+    </p>
+
+    <script>
+        let num1 = parseInt(prompt("Numero 1: "));
+        let num2 = parseInt(prompt("Numero 2: "));
+        let resto = num1 % num2; 
+        document.getElementById('span1').textContent=num1;
+        document.getElementById('span2').textContent=num2;
+        document.getElementById('span3').textContent=resto; 
+    </script>
+    
+</body>
+</html>

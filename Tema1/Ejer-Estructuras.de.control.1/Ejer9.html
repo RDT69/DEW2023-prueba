@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    //Realiza un programa que pida por prompt un número y muestre por consola la tabla de multiplicar (del 1 al 10) de dicho número.
+    
+    let num = parseInt(prompt("Ingresa un numero. "));
+    document.write("Tabla del: " + num + "{ ");
+    for (let index = 0; index <= 10; index++) {
+        document.write(num + " * " + index + " = " + num * index +",\n"); 
+    }
+    document.write("}");
+</script>    
+</body>
+</html>

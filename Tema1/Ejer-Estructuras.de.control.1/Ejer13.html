@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Escribir un programa que escriba en pantalla los divisores comunes de dos números dados
+        
+        let num1 = parseInt(prompt("Inserta un numero: "));
+        let num2 = parseInt(prompt("Inserta otro numero: "));
+
+        let lista1 = [];
+        let lista2 = [];
+
+        let divisoresComunes = [];
+
+            for (let i = 1; i <= num1; i++) {
+                if (num1 % i === 0){
+                lista1.push(i);
+                }           
+            }
+
+            for (let j = 1; j <= num2; j++) {
+                if (num2 % j === 0){
+                    lista2.push(j);
+                }           
+            }
+
+            for (let i = 0; i < lista1.length; i++) {
+            for (let j = 0; j < lista2.length;  j++) {
+                    if (lista1[i] === lista2[j]){
+                        divisoresComunes.push(lista1[i]);
+                    }
+            }
+            }
+
+            document.write("Los divisores del num1 son: " + lista1 + "<br>");
+            document.write("Los divisores del num2 son: "+ lista2 + "<br>");
+            document.write("Los divisores comunes son: " + divisoresComunes + "<br>");
+
+    </Script>
+</body>
+</html>

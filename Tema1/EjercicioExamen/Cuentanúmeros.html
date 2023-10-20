@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function contarDigitos() {
+        // Inicializamos un array de 10 elementos, uno para cada dígito de 0 a 9, con valor cero.
+        const conteo = Array(10).fill(0);
+
+        // Iteramos a través de los argumentos pasados a la función.
+        for (let i = 0; i < arguments.length; i++) {
+            const numero = arguments[i];
+
+            // Verificamos si el argumento es un número de un solo dígito.
+            if (numero >= 0 && numero <= 9 && Number.isInteger(numero)) {
+            // Incrementamos el contador correspondiente al dígito.
+            conteo[numero]++;
+            }
+        }
+
+        return conteo;
+        }
+
+    </Script>
+</body>
+</html>

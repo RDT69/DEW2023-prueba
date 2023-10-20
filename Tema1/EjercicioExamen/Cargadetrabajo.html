@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tiempoValido(tareas) {
+        // Inicializa el tiempo total en segundos
+        let tiempoTotal = 0;
+
+        // Convierte los tiempos de las tareas a segundos y suma al tiempo total
+        for (let i = 0; i < tareas.length; i++) {
+            const tiempoTarea = tareas[i].split(":");
+            const horas = parseInt(tiempoTarea[0]);
+            const minutos = parseInt(tiempoTarea[1]);
+            const segundos = parseInt(tiempoTarea[2]);
+            tiempoTotal += horas * 3600 + minutos * 60 + segundos;
+        }
+
+        // Define la jornada laboral en segundos (8 horas)
+        const jornadaLaboral = 8 * 3600;
+
+        // Compara el tiempo total con la jornada laboral y devuelve true o false
+        return tiempoTotal <= jornadaLaboral;
+        }
+
+
+    </script>
+</body>
+</html>

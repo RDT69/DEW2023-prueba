@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Crea una función llamada sumNumbers que recibe como argumento un número indeterminado de números y devuelve un número con la suma de todos ellos.
+        */
+
+        function sumNumbers(num) {
+            
+            let n = 0;
+
+            for(i = 0; i < num.length; i++){
+                n += num[i];               
+            }
+            return n;
+        }
+        console.log(sumNumbers([1,2,3,4]));
+    </script>
+</body>
+</html>

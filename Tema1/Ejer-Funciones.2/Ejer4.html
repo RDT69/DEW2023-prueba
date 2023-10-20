@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // rea una función llamada "calcularIVA" a la que se le pasa como parámetro el precio base y el tipo de IVA ("General", "Reducido" y "Superreducido") y calcula el precio final teniendo en cuenta que a cada tipo de IVA le corresponden 24%, 10% y 5% respectivamente.
+        
+        precio = parseInt(prompt("Inserte el precio de la prenda: "));
+        tipoIva = prompt("Inserte el tipo de IVA: ");100
+        calcularIva(precio, tipoIva);
+        
+        function calcularIva(precio, tipoIva) {
+            
+            switch (tipoIva) {
+                case "General":
+                    //return document.write("El precio final es: " + (precio + ((precio * 24)/100)));
+                    return document.write("El precio final es: " + (precio + (precio*0,24)));
+                    break;
+                case "Reducido":
+                    return document.write("El precio final es: " + (precio + (precio * 0,10)));
+                    break;
+                case "Superreducido":
+                    return document.write("El precio final es: " + (precio + (precio * 0.05)));1
+                    break;
+            }
+
+        }
+    </script>
+</body>
+</html>

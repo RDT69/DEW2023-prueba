@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Escribe una función que acepte un número como parámetro y verifique si es primo o no.
+
+        let num1 = parseInt(prompt("Inserte un numero: "));
+        esPrimo(num1);
+
+        function esPrimo(num) {
+
+            let esPrimo = true;
+
+            if(num <= 1){
+                esPrimo = false;
+            } else {
+                for (let i = 2; i < num; i++) {
+                    if (num % i === 0) {
+                        esPrimo = false;
+                        break;
+                    }
+                }
+            }
+
+            if (esPrimo) {
+                alert(num + " Es primo.");
+            } else {
+                alert(num + " No es primo.");
+            }
+
+        }
+    </script>
+</body>
+</html>

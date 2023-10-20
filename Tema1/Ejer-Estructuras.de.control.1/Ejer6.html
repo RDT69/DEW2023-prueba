@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //Realiza el ejercicio anterior pero permitiendo que la nota tenga decimales.
+
+        let num;
+        num = parseFloat(prompt("Inserta tu nota: "));
+
+        if(num  >= 0 &&  num < 3){
+            alert("Muy deficiente.");
+        }else if(num >= 3 && num < 5){
+           alert("Insuficiente.");
+        }else if(num >= 6 && num < 7){
+            alert("Bien.");
+        }else if(num>= 7 && num < 9){
+            alert("notable.");
+        }else if (num == 9 && num == 10){
+            alert("Sobresaliente.");
+        }
+    </script>
+</body>
+</html>

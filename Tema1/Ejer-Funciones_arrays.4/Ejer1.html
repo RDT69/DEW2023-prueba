@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>/*Crea una función llamada evenOrOdd que recibe como argumento 
+    un array de números y devuelve otro array de Strings con las palabras 
+    "Even" o "Odd" indicando si el número de esa posición es par o impar. */
+
+
+    function evenOrOdd(num) {
+        let nums = [];
+
+        for (let i = 0; i < num.length; i++) {
+            num[i] % 2 == 0 ? nums.push("even") : nums.push("odd");
+        }
+        return nums;
+    }
+    
+    console.log(evenOrOdd([2, 5, 7, 0, 16]));
+    </script>
+    
+    
+</body>
+</html>

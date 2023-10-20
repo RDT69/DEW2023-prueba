@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function categorizeProgrammers(nums) {
+            pro = [];
+
+            for (const programmer of programmers) {
+                const [experience, languages] = programmer;
+                
+                if(experience >= 24 && languages > 2){
+                    pro.push("Senior");  
+                }else{
+                    pro.push("Junior");
+                }
+            }
+return pro;            
+        }
+const result = categorizeProgrammers([10, 1], [21, 4], [42, 3], [24, 4], [30, 2], [24, 3]);
+console.log(result); // ["Junior", "Junior", "Senior", "Senior", "Junior", "Senior"]
+    </script>
+</body>
+</html>

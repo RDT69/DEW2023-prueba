@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ruleta() {
+            let numA = Math.floor(Math.random()*36);
+            let ruleta = [numA];
+            if(numA === 0){
+                return ruleta.push[0];
+            }
+            if(numA % 2 == 0){
+                ruleta.push( true);
+            }else{
+                ruleta.push( false);
+            }
+            if (numA === 1,  numA === 3 || numA === 5 || numA === 7 || numA === 9 || numA === 12 ||numA === 14 ||numA === 16 || numA === 18 || numA === 21 || numA === 23 || numA === 25 || numA === 27 || numA === 30 || numA === 32) {
+                 ruleta.push( true);
+            } else {
+                ruleta.push( false);
+            }
+            if (numA >= 16 && numA <= 36){
+                ruleta.push(true);
+            } else {
+                ruleta.push(false);
+            }  
+
+            
+        return ruleta;
+        }
+
+        console.log(ruleta(0));
+    </script>
+</body>
+</html>

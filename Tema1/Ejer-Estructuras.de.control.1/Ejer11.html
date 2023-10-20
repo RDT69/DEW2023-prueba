@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Realiza un programa que pida un número y muestre en una lista en el documento todos los pares menores de ese número en orden descendiente.
+        
+        let num1, num2;
+        num1 = parseInt(prompt("Inserta el numero de columnas: "));
+        num2 = parseInt(prompt("Inserta el numero de filas: "));
+
+        document.write("<table border='1'>");
+            for (let i = 1; i <= num2; i++) {
+            document.write("<tr>");
+            for (let j = 1; j <= num1; j++) {5
+                document.write("<td>" + (i * j) + "</td>");
+            }
+            document.write("</tr>");
+            }
+            document.write("</table>");
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function queueTime(clients, nqueues) {
+    let queues = new Array(nqueues).fill(0);
+    clients.forEach(client => {
+        let minorWait = Math.min(...queues);
+        let queueSelected = queues.indexOf(minorWait);
+        queues[queueSelected]+=client;
+    });
+    return Math.max(...queues);
+}
+    </script>
+</body>
+</html>

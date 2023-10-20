@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*Crea una función llamada sumPositives que recibe como argumento un número indeterminado 
+de números y devuelve un número con la suma de todos los que son positivos. Es decir, los 
+negativos los ignora.
+*/
+ function sumPositives(num) {
+    let n = 0;
+
+    for (let i = 0; i < num.length; i++) {
+        if(num[i] >= 0){
+            n += num[i];
+        }
+    }
+    return n;
+ }
+ console.log(sumPositives([1,-2,-3,4]));
+
+    </script>
+</body>
+</html>

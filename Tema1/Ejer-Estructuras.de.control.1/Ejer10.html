@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //Realiza un programa que pida un número y muestre en una lista en el documento todos los pares menores de ese número en orden descendiente.
+        
+        let num = parseInt(prompt("Ingresa un numero: " ));
+        let lista = [];
+
+        for (let i = 0; i <= num; i++) {
+            if (i % 2 == 0){
+                lista.push([i]);
+            }
+        }
+        let listaAlReves = structuredClone(lista).reverse();
+        document.write(listaAlReves);
+        
+        
+    </script>
+</body>
+</html>

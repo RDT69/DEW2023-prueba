@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Escribe una función que verifique si una cadena pasada es un palíndromo1. 
+
+        function palabraPalindromo(palabra) {
+            
+            parabra = palabra.toLowerCase().replace("");
+            return palabra === palabra.split("").reverse().join('') ? 'Es palindromo' : 'no es palindromo';
+
+        }
+        let madam = prompt("Escriber una palabra: ");
+        console.log(palabraPalindromo(madam));
+    </script>
+</body>
+</html>

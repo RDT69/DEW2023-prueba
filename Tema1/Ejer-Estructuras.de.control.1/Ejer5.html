@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Pide una nota (número). Muestra la calificación según la nota exacta sin decimales:
+        
+        let num;
+        num = parseInt(prompt("Inserta tu nota: "));
+
+        switch(num){
+            case 0: 
+            case 1:
+            case 2:
+            alert("Muy deficiente.");
+            break;
+            case 3:
+            case 4:
+            alert("Insuficiente.");
+            break;
+            case 5:
+            alert("Suficiente.");
+            break;
+            case 6:
+            alert("Bien.");
+            break;
+            case 7: 
+            case 8:
+            alert("Notable.");
+            break;
+            case 9:
+            case 10:
+            alert("Sobresaliente.");
+            break;
+            default:
+            alert("Esa nota no existe fantasma.");       
+        }
+
+    </script>
+</body>
+</html>

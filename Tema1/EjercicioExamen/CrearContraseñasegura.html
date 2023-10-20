@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+function generarContrasenaDesdeTexto(texto) {
+  // Dividimos el texto en palabras utilizando espacios como separadores.
+  const palabras = texto.split(' ');
+
+  // Inicializamos la contraseña como una cadena vacía.
+  let contrasena = '';
+
+  // Iteramos a través de las palabras y tomamos la primera letra de cada una.
+  for (let i = 0; i < palabras.length; i++) {
+    const palabra = palabras[i];
+    
+    // Verificamos si la palabra no está vacía.
+    if (palabra.length > 0) {
+      // Concatenamos la primera letra de la palabra a la contraseña en minúsculas.
+      contrasena += palabra[0].toLowerCase();
+    }
+  }
+
+  return contrasena;
+}
+    </script>
+</body>
+</html>
