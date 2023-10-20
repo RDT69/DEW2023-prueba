@@ -4,7 +4,7 @@ class Player {
   constructor(name) {
     this.name = name;
   }
-}
+}  
 
 //  Esto son prubas
 let player1 = new Player("Juan");

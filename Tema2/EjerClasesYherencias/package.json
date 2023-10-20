@@ -1,0 +1,14 @@
+{
+  "name": "ejerclasesyherencias",
+  "version": "1.0.0",
+  "description": "Prueba con clases en un ejercicio de tenis",
+  "main": "index.js",
+  "scripts": {
+    "test": "Jest"
+  },
+  "author": "Jose",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
